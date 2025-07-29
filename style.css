@@ -1,0 +1,108 @@
+/* body   {
+
+    background-image: radial-gradient(rgb(213, 212, 250), rgb(221, 231, 255));
+    animation: colorCycle 15s infinite alternate;
+} */
+
+body {
+  animation: bgColorChange 5s infinite;
+  background: linear-gradient(270deg, #cdc9db, #c8cde9, #f1f1ff, #c9c7d3);
+  background-size: 800% 800%;
+}
+
+@keyframes bgColorChange {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+* {
+    margin: 10px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
+}
+h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 5.9rem;
+    font-family: "ratiomodern", serif;
+    font-weight: 400;
+font-style: italic;
+     text-shadow: 0 0 10px #c3c3c3, 0 0 20px #fff, 0 0 30px #ffecf5, 0 0 40px #eefcfc, 0 0 50px #eeeeee, 0 0 60px #e6e6ff, 0 0 70px #ffe9f4;
+    font-family: ratio;
+    animation: h1glow 10s infinite;
+    font-kerning: auto;
+}
+
+@keyframes h1glow {
+    0% {
+        text-shadow: 0 0 10px #d8d8d8, 0 0 20px #fff, 0 0 30px #ffecf5, 0 0 40px #eefcfc, 0 0 50px #ffe2f0, 0 0 60px #e6e6ff, 0 0 70px #ffe9f4;
+    }
+    50% {
+        text-shadow: 0 0 20px #d8d8d8, 0 0 30px #fff, 0 0 40px #ffecf5, 0 0 50px #eefcfc, 0 0 60px #ffe2f0, 0 0 70px #cfcff8, 0 0 80px #ece9ff;
+    }
+    100% {
+        text-shadow:  0 0 50px #d8d8d8, 0 0 20px #fff, 0 0 30px #ffecf5, 0 0 40px #eefcfc, 0 0 50px #ffe2f0, 0 0 60px #e6e6ff, 0 0 70px #ffe9f4;;
+    }
+} {
+    
+}
+
+.VIDEO-WRAPPER {
+    position: relative;
+    display: grid;
+    grid-template-columns:  repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 100%;
+    height: 100%;
+    background-color: #feb47b;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-color: rgb(255, 0, 0);
+}
+
+
+button {
+align-items: flex-start;
+text-align: center;
+cursor: default;
+padding-inline-start: 6px;
+color: buttontext;
+padding-block-start: 2px;
+padding-block-end: 3px;
+border-top-width: 2px;
+border-right-width: 2px;
+border-bottom-width: 2px;
+border-left-width: 2px;
+border-top-style: outset;
+border-right-style: outset;
+border-bottom-style: outset;
+border-left-style: outset;
+border-top-color: buttonface;
+border-right-color: buttonface;
+border-bottom-color: buttonface;
+border-left-color: buttonface;
+background-color: buttonface;
+box-sizing: border-box;
+position: fixed;
+left: 80%;
+}
+
+button > div > img {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+}   
