@@ -86,10 +86,13 @@ h1 {
     grid-template-columns:  repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     width: 100%;
-    height: 100%;
+    height: auto;
     background-color: #ffffff33;
 }
-
+.VIDEO-ID {
+    max-height: fit-content;
+    background-color: #c8cde9;
+}
 .video-container {
     display: flex;
     justify-content: center;
@@ -217,7 +220,8 @@ p {
 }
 
 .live-video {
-    padding: 0 10px 0 10px
-    display: grid;
-    
+padding: 0 10px 0 10px
+display: grid;
+/* background-color: rgba(255, 255, 255, 0.8); */
+padding: 60px;
 }
