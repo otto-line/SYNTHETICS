@@ -215,3 +215,9 @@ filter: blur(0px);
 p {
     margin: 10px;
 }
+
+.live-video {
+    padding: 0 10px 0 10px
+    display: grid;
+    
+}
